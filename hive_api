@@ -59,7 +59,6 @@ statusCode=`echo "$response" | tail -1`
 response=`echo "$response" | sed '$d'`
 [[ $statusCode -lt 200 || $statusCode -ge 300 ]] && { echo "$response" | jq 1>&2; } && exit 1
 
-# Display farms
 echo "$response"
 }
 
@@ -75,7 +74,6 @@ statusCode=`echo "$response" | tail -1`
 response=`echo "$response" | sed '$d'`
 [[ $statusCode -lt 200 || $statusCode -ge 300 ]] && { echo "$response" | jq 1>&2; } && exit 1
 
-# Display farms
 echo "$response"
 }
 
@@ -88,7 +86,6 @@ response=`curl -s -w "\n%{http_code}" \
 	 
 
 
-# Display farms
 echo "$response"
 }
 
@@ -100,7 +97,6 @@ response=`curl -s -w "\n%{http_code}" \
 	 
 
 
-# Display farms
 echo "$response"
 }
 
@@ -118,7 +114,6 @@ statusCode=`echo "$response" | tail -1`
 response=`echo "$response" | sed '$d'`
 [[ $statusCode -lt 200 || $statusCode -ge 300 ]] && { echo "$response" | jq 1>&2; } && exit 1
 
-# Display farms
 echo "$response"
 }
 
@@ -136,7 +131,6 @@ statusCode=`echo "$response" | tail -1`
 response=`echo "$response" | sed '$d'`
 [[ $statusCode -lt 200 || $statusCode -ge 300 ]] && { echo "$response" | jq 1>&2; } && exit 1
 
-# Display farms
 echo "$response"
 }
 
