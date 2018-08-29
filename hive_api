@@ -10,10 +10,12 @@ fi
 baseUrl='https://api2.hiveos.farm/api/v2'
 login="you_login"
 password="you_passwd"
-TOKEN="/hive-config/token"
-accessToken=""
+TOKEN="path to token file"
 FARM_ID=you_FARM_ID #Not worker ID!!!
 RIG_ID=you_RIG_ID #Worker ID
+
+
+accessToken=""
 
 
 function login {
